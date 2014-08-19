@@ -29,12 +29,12 @@ git clone <this repo>
 
 If you prefer to use Android studio:
 
-  # Clone this repo to a prefered location.
-  # Open Android Studio and do File->Import Project...
-  # Browse to and mark the build.gradle filedirectly in the project root, click OK
-  # Once the project has loaded, Click Build->Rebuild Project
-  # Click the play button to start app-android
-  # Open Gradle tasks (normally minimized on the right edge of your screen) and double click the task launchIPhoneSimulator
+1. Clone this repo to a prefered location.
+2. Open Android Studio and do File->Import Project...
+3. Browse to and mark the build.gradle filedirectly in the project root, click OK
+4. Once the project has loaded, Click Build->Rebuild Project
+5. Click the play button to start app-android
+6. Open Gradle tasks (normally minimized on the right edge of your screen) and double click the task launchIPhoneSimulator
 
 
 
