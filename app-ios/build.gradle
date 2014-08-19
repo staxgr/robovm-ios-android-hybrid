@@ -20,7 +20,7 @@ repositories {
 
 ext {
     // Configure your application main class
-    mainClassName = "se.tap2.testrobovm.TestRoboVm"
+    mainClassName = "se.tap2.testrobovm.MyIpResolverApplication"
     roboVMVersion = "0.0.15-SNAPSHOT"
 }
 
