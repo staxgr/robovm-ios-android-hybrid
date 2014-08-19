@@ -6,7 +6,7 @@ All configuration is done with gradle, and the only prerequisite is that you hav
 
 The project consists of three main parts (or modules): app-android, app-ios and common. One Android app, one iOS app (configured to use RoboVM) and a plain old Java project that holds common code for both apps.
 
-=== Build and run the apps ===
+### Build and run the apps ###
 
 **Important: Before you try to run the iOS app, make sure you manually run XCode once to accept Licens Agreements**
 
