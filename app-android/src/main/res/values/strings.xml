@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">RoboVmHybrid</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="status">Getting IP</string>
     <string name="action_settings">Settings</string>
 
 </resources>

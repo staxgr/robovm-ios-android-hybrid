@@ -3,13 +3,12 @@ package se.tap2.testrobovm;
 import org.robovm.apple.foundation.NSAutoreleasePool;
 import org.robovm.apple.foundation.NSDictionary;
 import org.robovm.apple.uikit.UIApplication;
-import org.robovm.apple.uikit.UIApplicationDelegate;
 import org.robovm.apple.uikit.UIApplicationDelegateAdapter;
 import org.robovm.apple.uikit.UIScreen;
 import org.robovm.apple.uikit.UIWindow;
 
 
-public class TestRoboVm extends UIApplicationDelegateAdapter {
+public class MyIpResolverApplication extends UIApplicationDelegateAdapter {
 
     private UIWindow window = null;
     private int clickCount = 0;
@@ -21,9 +20,7 @@ public class TestRoboVm extends UIApplicationDelegateAdapter {
 
 
         window = new UIWindow(UIScreen.getMainScreen().getBounds());
-//        window.setBackgroundColor(UIColor.lightGrayColor());
-//        window.addSubview(button);
-        window.setRootViewController(new MyViewController());
+        window.setRootViewController(new MyIpViewController());
         window.makeKeyAndVisible();
         
         return true;
@@ -31,7 +28,7 @@ public class TestRoboVm extends UIApplicationDelegateAdapter {
 
     public static void main(String[] args) {
         NSAutoreleasePool pool = new NSAutoreleasePool();
-        UIApplication.main(args, null, TestRoboVm.class);
+        UIApplication.main(args, null, MyIpResolverApplication.class);
         pool.drain();
     }
 }
