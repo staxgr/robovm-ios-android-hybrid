@@ -1,0 +1,43 @@
+// Pull the plugin from Maven Central
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+    dependencies {
+        classpath 'com.github.jtakakura:gradle-robovm-plugin:0.0.11-SNAPSHOT'
+    }
+}
+
+// Apply the plugin
+apply plugin: 'java'
+apply plugin: 'robovm'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+ext {
+    // Configure your application main class
+    mainClassName = "se.tap2.testrobovm.TestRoboVm"
+    roboVMVersion = "0.0.15-SNAPSHOT"
+}
+
+dependencies {
+    compile "org.robovm:robovm-rt:${roboVMVersion}"
+    compile "org.robovm:robovm-cocoatouch:${roboVMVersion}"
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.google.guava:guava:16.0.1'
+    compile project(':common')
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+robovm {
+    // Configure robovm
+//    iosSignIdentity = ""
+//    iosProvisioningProfile = ""
+//    iosSkipSigning = false
+//    stdoutFifo = ""
+//    stderrFifo = ""
+}

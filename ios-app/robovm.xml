@@ -1,0 +1,9 @@
+<config>
+    <forceLinkClasses>
+        <!-- for http: support use -->
+        <pattern>com.android.okhttp.HttpHandler</pattern>
+        <!-- for https: support use -->
+        <pattern>com.android.okhttp.HttpsHandler</pattern>
+    </forceLinkClasses>
+
+</config>
