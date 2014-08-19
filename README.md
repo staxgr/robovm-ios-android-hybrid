@@ -1,4 +1,4 @@
-This is an example Gradle project that aims to show how easy you can use Gradle, Java and the amazing (RoboVM [ http://robovm.org]) to setup a project that builds both a native Android and a native iOS app that share a common code layer in Java.
+This is an example Gradle project that aims to show how easy you can use Gradle, Java and the amazing [RoboVM( http://robovm.org)] to setup a project that builds both a native Android and a native iOS app that share a common code layer in Java.
 
 To understand this example fully, you need to be familiar with Android development using Android Studio and Gradle, and you should have a look at www.robovm.org
 
