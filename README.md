@@ -8,7 +8,7 @@ The project consists of three main parts (or modules): app-android, app-ios and 
 
 ### Build and run the apps ###
 
-**Important: Before you try to run the iOS app, make sure you manually run XCode once to accept Licens Agreements**
+**Important: Before you try to run the iOS app, make sure you manually run XCode once to accept License Agreements**
 
 To build and run the apps from command line:
 
