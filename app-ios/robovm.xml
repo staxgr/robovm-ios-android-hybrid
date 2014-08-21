@@ -1,4 +1,14 @@
 <config>
+    <resources>
+        <resource>
+            <directory>./nibs</directory>
+            <includes>
+                <include>**</include>
+            </includes>
+            <skipPngCrush>true</skipPngCrush>
+        </resource>
+    </resources>
+
     <forceLinkClasses>
         <!-- for http: support use -->
         <pattern>com.android.okhttp.HttpHandler</pattern>
